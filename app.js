@@ -31,7 +31,7 @@ router.render = (req, res) => {
   const _isNoData = isNoData(res.locals.data);
   if (_isNoData) {
     const noDataResTpl = {
-      code: 404,
+      code: 500,
       msg: '暂无数据|请求异常!',
       data: {},
       status: false

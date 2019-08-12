@@ -372,7 +372,7 @@ const userInfo = (options) => {
     }],
     'actionList': null,
     'dataAccess': null
-  })
+  });
 
   userInfo.role = roleObj
   return userInfo
@@ -383,7 +383,7 @@ const login = () => {
     'id': Mock.Random.guid(),
     'name': Mock.Random.name(),
     'username': 'user',
-    'password': '',
+    'password': 'user',
     'avatar': 'https://gw.alipayobjects.com/zos/rmsportal/jZUIxmJycoymBprLOUbT.png',
     'status': 1,
     'telephone': '',
@@ -405,6 +405,7 @@ const login = () => {
 
   const adminRes = JSON.parse(JSON.stringify(resTpl));
   adminRes.username = 'admin';
+  adminRes.password = 'admin';
   adminRes.roleId = 'admin';
   adminRes.userInfo.username = 'admin';
 
