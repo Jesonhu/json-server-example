@@ -1,10 +1,7 @@
-
+const config = require('./config');
 
 // 需要重写的路由在 `defineWriteMap` 增加.
-const defineWriteMap = {
-  '/news/list': '/news_list',
-  '/announcement/list': 'announcement_list'
-}
+const defineWriteMap = config.rewriteList;
 
 /**
  * 重写生成器.
