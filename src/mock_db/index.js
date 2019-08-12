@@ -1,4 +1,5 @@
 const { login, userinfo, logout } = require('./modules/user');
+const { workorder } = require('./modules/workorder');
 
 module.exports = {
   // 新闻
@@ -76,4 +77,6 @@ module.exports = {
   logout,
   /** 用户详情 */
   userinfo,
+
+  workorder
 }
